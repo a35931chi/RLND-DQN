@@ -13,10 +13,11 @@ class QNetwork(nn.Module):
             action_size (int): Dimension of each action
             seed (int): Random seed
         """
-        super(QNetwork, self).__init__()
-        self.seed = torch.manual_seed(seed)
+        super(QNetwork, self).__init__() #not sure what super does
+        self.seed = torch.manual_seed(seed) #not familiar with pytorch yet
         "*** YOUR CODE HERE ***"
 
     def forward(self, state):
         """Build a network that maps state -> action values."""
+        #this seems like a step that i'll need to take to take a step forward the gradient descent
         pass

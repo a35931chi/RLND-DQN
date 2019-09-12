@@ -87,6 +87,7 @@ class Agent():
 
         ## TODO: compute and minimize the loss
         "*** YOUR CODE HERE ***"
+        #my impuression of this is that there's a gradient decent, and we'll take the direction of the gradient decent
 
         # ------------------- update target network ------------------- #
         self.soft_update(self.qnetwork_local, self.qnetwork_target, TAU)                     
